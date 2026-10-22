@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota</title>
+</head>
+<body>
+    <header>
+        <div class="logotoyota">
+            <h1>Toyota</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Modelos</a></li>
+                <li><a href="#">Comprá</a></li>
+                <li><a href="#">Financiación</a></li>
+                <li><a href="#">Descubrí</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!--Carrusel de imagenes (estructura base para js)-->
+        <section class="carrusel-container">
+            <div class="carrusel-slider">
+                <!--Imagen 1 activada por defecto-->
+                <div class="slide-fade">
+                    <img src="" alt="Promocion pincipal">
+                    <div class="slide-content">
+                        <h2>Tu próximo vehiculo, cada vez más cerca</h2>
+                        <p>Conocé las oportunidades exclusivas de financiación.</p>
+                    </div>
+                </div>
+                <!--Imagen 2-->
+                <div class="slide-fade">
+                    <img src="" alt="Nuevo modelo">
+                    <div class="slide-content">
+                        <h2>Lo ultimo en Toyota</h2>
+                        <p>Hechale un vistazo a nuestro ultimo modelo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones de navegacion del carrusel-->
+            <button class="previo" onclick="cambiarSlide(-1)">&#10094</button>
+            <button class="siguiente" onclick="cambiarSlide(1)">&#10095</button>
+
+            <!-- Indicadores-->
+             <div class="carrusel-puntos">
+                <span class="punto" onclick="currentSlide(1)"></span>
+                <span class="punto" onclick="currentSlide(2)"></span>
+             </div>
+        </section>
+         
+        <!-- Informacion general y presentacion del sitio -->
+        <section class="info-general">
+            <h2>Descubrí tu próximo vehiculo</h2>
+            <p>Explora las categorías disponibles y encuentra el modelo que se adapte a tu estilo de vida.</p>
+
+         <div class="categorias-grid">
+            <button class="cat-btn active">Sedán</button>
+            <button class="cat-btn active">Pick-up</button>
+            <button class="cat-btn active">SUV</button>
+            <button class="cat-btn active">GR Sport</button>
+         </div>
+        </section>
+    </main>
+</body>
+</html>
