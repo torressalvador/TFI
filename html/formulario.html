@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="../css/estiloform.css">
+    <link rel="stylesheet" href="../js/formulariovalidaciones.js">
+</head>
+
+<body>
+    <header>
+        <div class="logotoyota">
+            <h1>Toyota</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexprincipal.html">Inicio</a></li>
+                <li><a href="indexmodelos.html">Modelos</a></li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Complete sus datos</h2>
+
+    <div class="form-container">
+        <h3>Mis datos:</h3>
+        <form id="formulario" novalidate>
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <div id="errorNombre" class="error"></div>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Seleccione...</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <div id="errorGenero" class="error"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="errorEmail" class="error"></div>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            <div id="errorTelefono" class="error"></div>
+
+            <label for="nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento" required>
+            <div id="errorFecha" class="error"></div>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <div class="buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
