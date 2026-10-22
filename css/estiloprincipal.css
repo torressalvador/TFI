@@ -6,6 +6,7 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
 body {
     background-color: #f9f9f9;
     color: #111;
@@ -32,6 +33,7 @@ header {
     text-transform: uppercase;
 }
 
+
 nav ul {
     display: flex;
     list-style: none;
@@ -43,7 +45,23 @@ nav ul li a {
     color: #333;
     font-size: 0.95rem;
     font-weight: 500;
+    position: relative;
     transition: color 0.2s;
+}
+
+nav ul li a.active {
+    color: #eb0a1e;
+    font-weight: bold;
+}
+
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #eb0a1e;
 }
 
 nav ul li a:hover {
@@ -58,7 +76,7 @@ nav ul li a:hover {
     margin: 30px auto;
     border-radius: 8px;
     overflow: hidden;
-    background-color: #1a1a1a; 
+    background-color: #1a1a1a;
     /* fondo provisional hasta que elija imagen */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -71,7 +89,7 @@ nav ul li a:hover {
 
 .slide-fade {
     display: none;
-/* tengo que hacer el javascript  */
+    /* tengo que hacer el javascript  */
     position: absolute;
     width: 100%;
     height: 100%;
@@ -212,4 +230,15 @@ nav ul li a:hover {
     width: 100%;
     height: 3px;
     background-color: #eb0a1e;
+}
+
+.pie-pagina {
+    width: 100%;
+    margin-top: auto;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    color: #666;
+    font-size: 0.9rem;
 }

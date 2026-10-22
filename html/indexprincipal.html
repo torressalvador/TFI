@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toyota</title>
     <link rel="stylesheet" href="../css/estiloprincipal.css">
+    <link rel="icon" href="../imagenes/logo-toyota.svg" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="logotoyota">
@@ -13,7 +16,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="indexprincipal.html">Inicio</a></li>
+                <li><a href="indexprincipal.html" class="active">Inicio</a></li>
                 <li><a href="indexmodelos.html">Modelos</a></li>
                 <li><a href="formulario.html">Contactanos</a></li>
             </ul>
@@ -21,7 +24,7 @@
     </header>
 
     <main>
-    <!--Carrusel de imagenes (estructura base para js)-->
+        <!--Carrusel de imagenes (estructura base para js)-->
         <section class="carrusel-container">
             <div class="carrusel-slider">
                 <!--Imagen 1 activada por defecto-->
@@ -47,24 +50,29 @@
             <button class="siguiente" onclick="cambiarSlide(1)">&#10095</button>
 
             <!-- Indicadores-->
-             <div class="carrusel-puntos">
+            <div class="carrusel-puntos">
                 <span class="punto" onclick="currentSlide(1)"></span>
                 <span class="punto" onclick="currentSlide(2)"></span>
-             </div>
+            </div>
         </section>
-         
+
         <!-- Informacion general y presentacion del sitio -->
         <section class="info-general">
             <h2>Descubrí tu próximo vehiculo</h2>
             <p>Explora las categorías disponibles y encuentra el modelo que se adapte a tu estilo de vida.</p>
 
-         <div class="categorias-grid">
-            <button class="cat-btn active">Sedán</button>
-            <button class="cat-btn active">Pick-up</button>
-            <button class="cat-btn active">SUV</button>
-            <button class="cat-btn active">GR Sport</button>
-         </div>
+            <div class="categorias-grid">
+                <button class="cat-btn active">Sedán</button>
+                <button class="cat-btn active">Pick-up</button>
+                <button class="cat-btn active">SUV</button>
+                <button class="cat-btn active">GR Sport</button>
+            </div>
         </section>
     </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Trabajo Final Integrador.</p>
+    </footer>
 </body>
+
 </html>
