@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Contactanos</title>
     <link rel="stylesheet" href="../css/estiloform.css">
-    <link rel="stylesheet" href="../js/formulariovalidaciones.js">
     <link rel="icon" href="../imagenes/logo-toyota.svg" type="image/x-icon">
 </head>
 
@@ -45,7 +44,7 @@
             <div id="errorEmail" class="error"></div>
 
             <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
+            <input type="tel" id="telefono" name="telefono" placeholder="ej:1122345678">
             <div id="errorTelefono" class="error"></div>
 
             <label for="nacimiento">Fecha de Nacimiento:</label>
@@ -59,12 +58,13 @@
                 <button type="submit">Enviar</button>
                 <button type="reset">Reset</button>
             </div>
+            <div id="mensajeExito" class="alerta-exito oculto"></div>
         </form>
     </div>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Trabajo Final Integrador.</p>
+    </footer>
+    <script src="../js/formulariovalidaciones.js"></script>
 </body>
-
-<footer class="pie-pagina">
-    <p>&copy; 2026 Trabajo Final Integrador.</p>
-</footer>
-
 </html>
