@@ -77,22 +77,20 @@ nav ul li a:hover {
     border-radius: 8px;
     overflow: hidden;
     background-color: #1a1a1a;
-    /* fondo provisional hasta que elija imagen */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.055);
 }
 
-.carrusel-slider {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+
 
 .slide-fade {
     display: none;
-    /* tengo que hacer el javascript  */
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 .slide-fade img {
@@ -102,27 +100,10 @@ nav ul li a:hover {
     opacity: 0.6;
 }
 
-.slide-content {
-    position: absolute;
-    bottom: 60px;
-    left: 60px;
-    color: #fff;
-    max-width: 500px;
-}
 
-.slide-content h2 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.slide-content p {
-    font-size: 1.1rem;
-    color: #e0e0e0;
-}
 
 /* botones de navegacion del carrusel */
-.prev,
+.previo,
 .siguiente {
     position: absolute;
     top: 50%;
@@ -137,7 +118,7 @@ nav ul li a:hover {
     z-index: 10;
 }
 
-.prev {
+.previo {
     left: 0;
     border-radius: 0 4px 4px 0;
 }
@@ -147,17 +128,20 @@ nav ul li a:hover {
     border-radius: 4px 0 0 4px;
 }
 
-.prev:hover,
+.previo:hover,
 .siguiente:hover {
-    background-color: rgba(235, 10, 30, 0.8);
+    background-color: rgba(235, 10, 29, 0.575);
 }
 
 /* Indicadores / Puntos inferiores */
 .carrusel-puntos {
     text-align: center;
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    padding: 15px 0;
+    background-color: linear-gradient(to top, rgba(0, 0, 0, 0.219), transparent);
     z-index: 10;
 }
 
@@ -176,6 +160,7 @@ nav ul li a:hover {
 .punto:hover {
     background-color: #eb0a1e;
 }
+
 
 /* informacion general y categorias */
 .info-general {
@@ -241,4 +226,16 @@ nav ul li a:hover {
     border-top: 1px solid #e0e0e0;
     color: #666;
     font-size: 0.9rem;
+}
+
+/* efecto animacion para desvanecimiento en carrusel */
+
+@keyframes fade {
+    from {
+        opacity: .2;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
