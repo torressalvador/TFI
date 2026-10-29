@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota | Yaris Hatchback</title>
+    <link rel="stylesheet" href="../css/estiloprincipal.css">
+    <link rel="stylesheet" href="../css/estilomodelos.css">
+    <link rel="icon" href="../imagenes/logo-toyota.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logotoyota">
+            <h1>Toyota</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexprincipal.html">Inicio</a></li>
+                <li><a href="indexmodelos.html">Modelos</a></li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Banner principal del modelo -->
+        <div class="banner">
+            <img src="../imagenesyaris/banner.jpeg" alt="Banner">
+        </div>
+
+        <!-- Seccion de versiones y precios -->
+        <section class="info-general">
+            <h2>Encontrá tu versión</h2>
+            <p>Seleccioná la versión que más te guste.</p>
+
+            <!-- Botones para alternar entre versiones -->
+            <div class="categorias-grid">
+                <button class="cat-btn active" onclick="filtrarVersion('xs')">XS 1.5 CVT 5P</button>
+                <button class="cat-btn" onclick="filtrarVersion('xls')">XLS+ 1.5 CVT 5P</button>
+                <button class="cat-btn" onclick="filtrarVersion('s')">S 1.5 CVT 5P</button>
+            </div>
+
+            <!-- Caja contenedora de las versiones -->
+            <div class="modelos">
+                <!-- Version XS  -->
+                <div id="xs" class="categoria-contenido active-cat">
+                    <div class="contenido-card">
+                        <img src="../imagenesyaris/yaris1.5scvt5p.png" alt="Toyota Yaris XS" class="auto-img">
+                        <h3>YARIS 1.5 S CVT 5P</h3>
+                        <p class="precio">$36.315.000</p>
+                    </div>
+                </div>
+
+                <!-- Version XLS+ -->
+                <div id="xls" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imagenesyaris/xls+1.5cvt5p.png" alt="Toyota Yaris XLS+" class="auto-img">
+                        <h3>XLS+ 1.5 CVT 5P</h3>
+                        <p class="precio">$40.340.000</p>
+                    </div>
+                </div>
+
+                <!-- Version S -->
+                <div id="s" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imagenesyaris/s1.5cvt5p.png" alt="Toyota Yaris S" class="auto-img">
+                        <h3>S 1.5 CVT 5P</h3>
+                        <p class="precio">$43.255.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de confort, diseño, seguridad, perfomance -->
+        <section class="razones-container">
+            <h2>Razones para tener un Yaris</h2>
+
+            <div class="razones-grid">
+                <div class="raz-card">
+                    <img src="../imagenesyaris/pantallamultimedia.webp" alt="confort y tecnologia">
+                    <div class="raz-texto">
+                        <h3>CONECTIVIDAD EN TODAS SUS VERSIONES</h3>
+                        <P>Audio con pantalla táctil LCD de 6.8” con conectividad Apple Car Play® & Android Auto®**</P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imagenesyaris/tss.jpeg" alt="seguridad">
+                    <div class="raz-texto">
+                        <h3>TOYOTA SAFETY SENSE</h3>
+                        <P>Yaris ofrece, en las versión S, Sistema de Pre-colisión frontal (PCS)* y Sistema de alerta de
+                            cambio de carril (LDA)*. Estos sistemas avanzados de asistencia a la conducción complementan
+                            al
+                            conductor en diversas situaciones de peligro para mitigar o evitar accidentes de tránsito.
+                        </P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imagenesyaris/stereo.jpeg" alt="confort y tecnologia">
+                    <div class="raz-texto">
+                        <h3>CONFORT Y TECNOLOGÍA</h3>
+                        <P>Equipado con climatizador automático digital, cámara de estacionamiento y control de
+                            velocidad crucero, disponibles en versiones XLS+ y S.</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerias de interior y exterior -->
+        <section class="galeria-interior">
+            <div class="galeria-grid">
+                <div class="galeria-card" onclick="abrirGaleria('interior')">
+                    <img src="../imagenesyaris/pantallamultimedia.webp" alt="Interior">
+                    <div class="galeria-overlay">
+                        <h3>Interior</h3>
+                    </div>
+                </div>
+
+                <div class="galeria-card" onclick="abrirGaleria('exterior')">
+                    <img src="../imagenesyaris/exteriorcalle.webp" alt="exterior">
+                    <div class="galeria-overlay">
+                        <h3>Exterior</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ventana flotante de carrusel -->
+        <div id="modal-galeria" class="modal-carrusel">
+            <span class="cerrar-modal" onclick="cerrarGaleria()">&times;</span>
+
+            <div class="modal-contenido">
+                <!-- contenedor dinamico donde JS pondra la imagen actual -->
+                <div id="modal-slide-container"></div>
+
+                <!-- Botones de navegación -->
+                <button class="modal-prev" onclick="cambiarSlideModal(-1)">&#10094;</button>
+                <button class="modal-next" onclick="cambiarSlideModal(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Seccion de diferenciales -->
+        <section class="diferenciales-contenedor">
+            <H2>Diferenciales</H2>
+
+            <div class="dif-grid">
+
+                <!-- Confort y tecnologia -->
+                <div class="dif-card">
+                    <img src="../imagenesyaris/interiortorpedo.png" alt="torpedo">
+                    <div class="dif-texto">
+                        <h3>CONFORT Y TECNOLOGIA</h3>
+                        <p>A partir de las versiones XLS+, el Yaris cuenta con sensores de estacionamiento delanteros y
+                            traseros y levanta cristales eléctricos con función "one touch" en las cuatro puertas. Por
+                            su parte, la versión S incorpora techo solar eléctrico brindando una mayor sensación de
+                            amplitud.</p>
+                    </div>
+                </div>
+
+                <!-- Diseño -->
+                <div class="dif-card">
+                    <img src="../imagenesyaris/exteriorgrande.jpeg" alt="exterior">
+                    <div class="dif-texto">
+                        <h3>DISEÑO</h3>
+                        <p>Diseño frontal con ópticas delanteras LED con regulación en altura, disponible en la versión
+                            S. Llantas de aleación de 16” para versiones XLS+ y S. </p>
+                    </div>
+                </div>
+
+                <!-- Seguridad -->
+                <div class="dif-card">
+                    <img src="../imagenesyaris/interiorairbag.jpeg" alt="seguridad">
+                    <div class="dif-texto">
+                        <h3>SEGURIDAD</h3>
+                        <p>7 airbags: frontales (x2), laterales (x2), de cortina (x2) y de rodilla (conductor). El
+                            equipamiento se completa con control de estabilidad, de tracción y asistente de arranque en
+                            pendiente.</p>
+                    </div>
+                </div>
+
+                <!-- Performance -->
+                <div class="dif-card">
+                    <img src="../imagenesyaris/interiorcambios.jpeg" alt="performance">
+                    <div class="dif-texto">
+                        <h3>PERFORMANCE</h3>
+                        <p>Caja automática CVT de 7 velocidades disponible en todas las versiones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Trabajo Final Integrador.</p>
+    </footer>
+
+    <script src="../js/carruselmodelos.js"></script>
+    <script src="../js/versiones.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+/* --- Estilos para la página del vehiculo a mostrar --- */
+
+
+.banner {
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 113vw;
+}
+
+@media (min-width: 1080px) {
+    .banner {
+        position: relative;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 73.37rem;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        background-color: initial;
+    }
+}
+
+
+/* --- Estilos para la sección Encontrá tu versión --- */
+.info-general {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.info-general h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.info-general p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+/* Oculta por defecto todas las cajas de versiones */
+.categoria-contenido {
+    display: none !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Muestra  la versión que tenga la clase activa */
+.categoria-contenido.active-cat {
+    display: flex !important;
+}
+
+
+.categorias-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+.cat-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #777;
+    padding: 10px 5px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.cat-btn:hover,
+.cat-btn.active {
+    color: #eb0a1e;
+}
+
+
+.cat-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #eb0a1e;
+}
+
+.precio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #eb0a1e;
+    margin: 15px 0;
+}
+
+/* Sección de razones  */
+.razones-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.razones-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #111;
+    text-align: center;
+}
+
+.razones-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.raz-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+}
+
+.raz-card:hover {
+    transform: translateY(-5px);
+}
+
+.raz-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.raz-texto {
+    padding: 25px;
+}
+
+.raz-texto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.raz-texto p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Para pantallas más grandes  */
+@media (min-width: 768px) {
+    .razones-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Estilos para la galeria de interior y exterior */
+.galeria-interior {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.galeria-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+}
+
+.galeria-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.galeria-card:hover img {
+    transform: scale(1.05);
+}
+
+.galeria-overlay h3 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+
+/* Estilo para los diferenciales */
+
+.diferenciales-contenedor {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.diferenciales-contenedor h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #111;
+    text-align: center;
+}
+
+.dif-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.dif-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+}
+
+.dif-card:hover {
+    transform: translateY(-5px);
+}
+
+.dif-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.dif-texto {
+    padding: 25px;
+}
+
+.dif-texto h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #111;
+    font-weight: 700;
+}
+
+.dif-texto p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Para computadoras: galeria y diferenciales en 2 columnas */
+
+@media (min-width: 768px) {
+    .galeria-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dif-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* --- Estilos del carrusel Flotante --- */
+.modal-carrusel {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    position: relative;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+}
+
+.modal-contenido img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* Botón de cierre (X) */
+.cerrar-modal {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.cerrar-modal:hover {
+    color: #eb0a1e;
+}
+
+/* Flechas de navegación del modal */
+.modal-prev,
+.modal-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+.modal-prev {
+    left: -50px;
+}
+
+.modal-next {
+    right: -50px;
+}
+
+.modal-prev:hover,
+.modal-next:hover {
+    background-color: #eb0a1e;
+}
+
+.pie-pagina {
+    width: 100%;
+    margin-top: auto;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    color: #666;
+    font-size: 0.9rem;
+}
