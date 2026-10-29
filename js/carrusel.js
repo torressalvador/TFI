@@ -109,3 +109,5 @@ function resetAutoplay() {
 window.onload = function() {
     inicializarCarrusel();
 };
+
+

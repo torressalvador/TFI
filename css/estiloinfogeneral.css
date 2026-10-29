@@ -1,0 +1,125 @@
+/* informacion general y categorias */
+.info-general {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.info-general h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.info-general p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.categorias-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.cat-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+    padding: 8px 5px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.cat-btn:hover,
+.cat-btn.active {
+    color: #eb0a1e;
+}
+
+/* linea roja inferior en el boton activo*/
+.cat-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #eb0a1e;
+}
+
+.pie-pagina {
+    width: 100%;
+    margin-top: auto;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    color: #666;
+    font-size: 0.9rem;
+}
+.modelos {
+    background-color: #fafafa;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 40px 20px;
+    margin-top: 25px;
+    min-height: 320px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+/* contenedor de las tarjetas de autos */
+.categoria-contenido {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.categoria-contenido.active-cat {
+    /* Va a mostrar la categoria activa */
+    display: flex !important;  
+}
+
+/* Tarjeta individual de cada rodado */
+.contenido-card {
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Imagen del auto con transición */
+.auto-img {
+    max-width: 280px;
+    height: auto;
+    transition: transform 0.4s, filter 0.4s ease; 
+}
+
+/* Efecto hover cuando se pasa el mouse por encima */
+.contenido-card:hover .auto-img{
+    transform: scale(1.08); 
+    filter: brightness(1.1); 
+}
+
+/* Estilo del boton de los modelos principales */
+.btn-modelo {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: 2px solid #111;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Efecto del boton */
+.contenido-card:hover .btn-modelo {
+    background-color: #111;
+    color: #fff;
+}

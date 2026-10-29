@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toyota</title>
     <link rel="stylesheet" href="../css/estiloprincipal.css">
+    <link rel="stylesheet" href="../css/estiloinfogeneral.css">
     <link rel="icon" href="../imagenes/logo-toyota.svg" type="image/x-icon">
 </head>
 
@@ -26,7 +27,7 @@
     <main>
         <!--Carrusel de imagenes (estructura base para js)-->
         <section class="carrusel-container">
-            
+
             <div id="carrusel-slides-wrapper"></div>
 
             <!-- Botones de navegacion del carrusel-->
@@ -39,14 +40,44 @@
 
         <!-- Informacion general y presentacion del sitio -->
         <section class="info-general">
-            <h2>Descubrí tu próximo vehiculo</h2>
+            <h2>Descubrí tu próximo Toyota</h2>
             <p>Explora las categorías disponibles y encuentra el modelo que se adapte a tu estilo de vida.</p>
 
             <div class="categorias-grid">
-                <button class="cat-btn active">Sedán</button>
-                <button class="cat-btn active">Pick-up</button>
-                <button class="cat-btn active">SUV</button>
-                <button class="cat-btn active">GR Sport</button>
+                <button class="cat-btn active" onclick="filtrarCategoria('sedan')">Sedán</button>
+                <button class="cat-btn" onclick="filtrarCategoria('pickup')">Pick-up</button>
+                <button class="cat-btn" onclick="filtrarCategoria('suv')">SUV</button>
+                <button class="cat-btn" onclick="filtrarCategoria('deportivo')">GR Sport</button>
+            </div>
+            <div class="modelos">
+                <div id="sedan" class="categoria-contenido active-cat">
+                    <div class="contenido-card">
+                        <img src="../imgpagprincipal/yariscostado.webp" alt="YARIS HATCHBACK" class="auto-img">
+                        <h3>YARIS HATCHBACK</h3>
+                        <a href="#" class="btn-modelo">Ver modelo</a>
+                    </div>
+                </div>
+                <div id="pickup" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imgpagprincipal/hiluxcostado.webp" alt="HILUX CABINA DOBLE" class="auto-img">
+                        <h3>HILUX CABINA DOBLE</h3>
+                        <a href="#" class="btn-modelo">Ver modelo</a>
+                    </div>
+                </div>
+                <div id="suv" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imgpagprincipal/suvcostado.webp" alt="YARIS CROSS" class="auto-img">
+                        <h3>YARIS CROSS</h3>
+                        <a href="#" class="btn-modelo">Ver modelo</a>
+                    </div>
+                </div>
+                <div id="deportivo" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imgpagprincipal/corollagrcostado.webp" alt="COROLLA GR-SPORT" class="auto-img">
+                        <h3>COROLLA GR-SPORT</h3>
+                        <a href="#" class="btn-modelo">Ver modelo</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -58,6 +89,7 @@
     </footer>
 
     <script src="../js/carrusel.js"></script>
+    <script src="../js/rodadosprincipales.js"></script>
 
 </body>
 

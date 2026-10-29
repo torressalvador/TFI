@@ -161,73 +161,6 @@ nav ul li a:hover {
     background-color: #eb0a1e;
 }
 
-
-/* informacion general y categorias */
-.info-general {
-    text-align: center;
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.info-general h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #111;
-}
-
-.info-general p {
-    color: #666;
-    font-size: 1rem;
-    margin-bottom: 30px;
-}
-
-.categorias-grid {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.cat-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #666;
-    padding: 8px 5px;
-    cursor: pointer;
-    position: relative;
-    transition: color 0.3s;
-}
-
-.cat-btn:hover,
-.cat-btn.active {
-    color: #eb0a1e;
-}
-
-/* linea roja inferior en el boton activo*/
-.cat-btn.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #eb0a1e;
-}
-
-.pie-pagina {
-    width: 100%;
-    margin-top: auto;
-    padding: 15px 0;
-    text-align: center;
-    background-color: #fff;
-    border-top: 1px solid #e0e0e0;
-    color: #666;
-    font-size: 0.9rem;
-}
-
 /* efecto animacion para desvanecimiento en carrusel */
 
 @keyframes fade {
@@ -239,3 +172,5 @@ nav ul li a:hover {
         opacity: 1;
     }
 }
+
+
