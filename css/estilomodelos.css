@@ -49,6 +49,27 @@
     display: block;
 }
 
+.banner-corollagr {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.banner-corollagr img {
+    width: 100%;
+    height: 70vh;
+    min-height: 320px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+
+
 @media (min-width: 1080px) {
     .banner {
         position: relative;

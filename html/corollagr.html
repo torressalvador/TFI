@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota | Corolla GR-Sport</title>
+    <link rel="stylesheet" href="../css/estiloprincipal.css">
+    <link rel="stylesheet" href="../css/estilomodelos.css">
+    <link rel="icon" href="../imagenes/logo-toyota.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logotoyota">
+            <h1>Toyota</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexprincipal.html">Inicio</a></li>
+                <li><a href="indexmodelos.html">Modelos</a></li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Banner principal del modelo -->
+        <div class="banner-corollagr">
+            <img src="../imagenescorollagr/banner.jpeg" alt="Banner">
+        </div>
+
+        <!-- Seccion de versiones y precios -->
+        <section class="info-general">
+            <h2>Si este es tu modelo de vehiculo, contáctanos.</h2>
+
+            <!-- Unica version -->
+            <div class="categorias-grid">
+                <button class="cat-btn active" onclick="filtrarVersion('gr')">GR-SPORT 2.0 CVT</button>
+            </div>
+
+            <!-- Caja contenedora -->
+            <div class="modelos">
+                <!-- Version GR  -->
+                <div id="gr" class="categoria-contenido active-cat">
+                    <div class="contenido-card">
+                        <img src="../imagenescorollagr/corollagr.png" alt="Toyota Corolla GR-Sport" class="auto-img">
+                        <h3>GR-SPORT 2.0 CVT</h3>
+                        <p class="precio">$55.439.000</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seccion de razones -->
+        <section class="razones-container">
+            <h2>Razones para tener un Corolla GR-Sport</h2>
+
+            <div class="razones-grid">
+                <div class="raz-card">
+                    <img src="../imagenescorollagr/centralmultimedia.png" alt="central multimedia">
+                    <div class="raz-texto">
+                        <h3>CENTRAL MULTIMEDIA 10"</h3>
+                        <P>Viví una experiencia de conducción conectada, con acceso fácil y directo para una
+                            visualización más clara de todas las funcionalidades del vehículo.
+                        </P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imagenescorollagr/motor2.0.jpeg" alt="motor">
+                    <div class="raz-texto">
+                        <h3>MOTOR 2.0L DYNAMIC FORCE</h3>
+                        <P>El Motor 2.0 L brinda un excelente equilibrio entre performance y bajo consumo con una
+                            potencia de 171 CV y 203 NM.
+                        </P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imagenescorollagr/suspensiondeportiva.png" alt="suspension">
+                    <div class="raz-texto">
+                        <h3>SUSPENSIÓN DEPORTIVA GR</h3>
+                        <P>Suspensión deportiva GR, con espirales y amortiguadores más firmes que le otorgan mayor
+                            control y maniobrabilidad a alta velocidad, junto con el refuerzo de chasis que mejora el
+                            comportamiento dinámico del vehículo.
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerias de interior y exterior -->
+        <section class="galeria-interior">
+            <div class="galeria-grid">
+                <div class="galeria-card" onclick="abrirGaleria('interior')">
+                    <img src="../imagenescorollagr/intgal1.jpeg" alt="Interior">
+                    <div class="galeria-overlay">
+                        <h3>Interior</h3>
+                    </div>
+                </div>
+
+                <div class="galeria-card" onclick="abrirGaleria('exterior')">
+                    <img src="../imagenescorollagr/extgal1.png" alt="exterior">
+                    <div class="galeria-overlay">
+                        <h3>Exterior</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ventana flotante de carrusel -->
+        <div id="modal-galeria" class="modal-carrusel">
+            <span class="cerrar-modal" onclick="cerrarGaleria()">&times;</span>
+
+            <div class="modal-contenido">
+                <!-- contenedor dinamico donde JS pondra la imagen actual -->
+                <div id="modal-slide-container"></div>
+
+                <!-- Botones de navegación -->
+                <button class="modal-prev" onclick="cambiarSlideModal(-1)">&#10094;</button>
+                <button class="modal-next" onclick="cambiarSlideModal(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Seccion de novedades -->
+        <section class="diferenciales-contenedor">
+            <H2>NOVEDADES DEL COROLLA GR-SPORT</H2>
+
+            <div class="dif-grid">
+
+                <!-- paragolpe -->
+                <div class="dif-card">
+                    <img src="../imagenescorollagr/paragolpe.jpeg" alt="paragolpe">
+                    <div class="dif-texto">
+                        <h3>PARAGOLPE DELANTERO</h3>
+                        <p>Equipado con canalizadores de aire que permiten que el flujo de aire sea dirigido de manera
+                            más eficiente, fluyendo desde el centro del paragolpes hacia los laterales y debajo del
+                            mismo. Este diseño no solo mejora la estabilidad del vehículo a altas velocidades, sino que
+                            también tiene un impacto significativo en la maniobrabilidad general.</p>
+                    </div>
+                </div>
+
+                <!-- spoiler -->
+                <div class="dif-card">
+                    <img src="../imagenescorollagr/spoiler.jpeg" alt="spoiler">
+                    <div class="dif-texto">
+                        <h3>SPOILER Y DIFUSOR INFERIOR TRASERO</h3>
+                        <p>Ambos inspirados en la icónica performance GR, guían el flujo de aire de manera precisa
+                            minimizando la resistencia aerodinámica.
+                            Además, contribuyen a reducir las turbulencias, lo que se traduce en una conducción más
+                            segura y placentera en carretera.</p>
+                    </div>
+                </div>
+
+                <!-- llantas -->
+                <div class="dif-card">
+                    <img src="../imagenescorollagr/llantas.jpeg" alt="llantas">
+                    <div class="dif-texto">
+                        <h3>DISEÑO LLANTAS</h3>
+                        <p>Llantas deportivas de 10 rayos de 17" con neumáticos 225/45 en color negro y diamantado.
+                            El vehículo cuenta con un paquete aerodinámico que optimiza la adherencia de las llantas al
+                            asfalto para una respuesta más rápida y mejorando el agarre del vehículo en curvas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Trabajo Final Integrador.</p>
+    </footer>
+
+    <script src="../js/carruselcorollagr.js"></script>
+    <script src="../js/versiones.js"></script>
+</body>
+
+</html>
