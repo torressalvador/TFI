@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota | Hilux Cabina Doble</title>
+    <link rel="stylesheet" href="../css/estiloprincipal.css">
+    <link rel="stylesheet" href="../css/estilomodelos.css">
+    <link rel="icon" href="../imagenes/logo-toyota.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logotoyota">
+            <h1>Toyota</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexprincipal.html">Inicio</a></li>
+                <li><a href="indexmodelos.html">Modelos</a></li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Banner principal del modelo -->
+        <div class="banner-hilux">
+            <img src="../imageneshilux/exteriorbanner.jpg" alt="Banner">
+        </div>
+
+        <!-- Seccion de versiones y precios -->
+        <section class="info-general">
+            <h2>Encontrá tu versión y contáctanos.</h2>
+            <p>Seleccioná la versión que más te guste.</p>
+
+            <!-- Botones para alternar entre versiones -->
+            <div class="categorias-grid">
+                <button class="cat-btn active" onclick="filtrarVersion('dxat')">DX 4X4 AT</button>
+                <button class="cat-btn" onclick="filtrarVersion('dxmt')">DX 4X4 MT</button>
+                <button class="cat-btn" onclick="filtrarVersion('srat')">SR 4X4 AT</button>
+                <button class="cat-btn" onclick="filtrarVersion('srmt')">SR 4X4 MT</button>
+                <button class="cat-btn" onclick="filtrarVersion('srvat')">SRV+ 4X4 AT</button>
+                <button class="cat-btn" onclick="filtrarVersion('srxat')">SRX AT 4X4</button>
+            </div>
+
+            <!-- Caja contenedora de las versiones -->
+            <div class="modelos">
+                <!-- Version DX 4X4 AT  -->
+                <div id="dxat" class="categoria-contenido active-cat">
+                    <div class="contenido-card">
+                        <img src="../imageneshilux/dx4x4at.png" alt="DX 4X4 MT" class="auto-img">
+                        <h3>DX 4X4 AT</h3>
+                        <p class="precio">$59.739.000</p>
+                    </div>
+                </div>
+
+                <!-- Version DX 4X4 MT -->
+                <div id="dxmt" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imageneshilux/dx4x4at.png" alt="DX 4X4 MT" class="auto-img">
+                        <h3>DX 4X4 MT</h3>
+                        <p class="precio">$58.116.000</p>
+                    </div>
+                </div>
+
+                <!-- Version SR 4X4 AT -->
+                <div id="srat" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imageneshilux/sr4x4at.png" alt="SR 4X4 AT" class="auto-img">
+                        <h3>SR 4X4 AT</h3>
+                        <p class="precio">$69.742.000</p>
+                    </div>
+                </div>
+
+                <!-- Version SR 4X4 MT  -->
+                <div id="srmt" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imageneshilux/sr4x4at.png" alt="SR 4X4 MT" class="auto-img">
+                        <h3>SR 4X4 MT</h3>
+                        <p class="precio">$66.856.000</p>
+                    </div>
+                </div>
+
+                <!-- Version SRV+ 4X4 AT -->
+                <div id="srvat" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imageneshilux/srv+4x4at.png" alt="SRV+ 4X4 AT" class="auto-img">
+                        <h3>SRV+ 4X4 AT</h3>
+                        <p class="precio">$80.317.000</p>
+                    </div>
+                </div>
+
+                <!-- Version SRX AT 4X4 -->
+                <div id="srxat" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imageneshilux/srx4x4at.png" alt="SRX AT 4X4" class="auto-img">
+                        <h3>SRX AT 4X4</h3>
+                        <p class="precio">$84.855.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de confort, diseño, seguridad, perfomance -->
+        <section class="razones-container">
+            <h2>Razones para tener una Hilux</h2>
+
+            <div class="razones-grid-hilux">
+                <div class="raz-card">
+                    <img src="../imageneshilux/exterior1.png" alt="diseño exterior">
+                    <div class="raz-texto">
+                        <h3>DISEÑO EXTERIOR</h3>
+                        <P>Se destacan los faros delanteros Bi - LED, luces diurnas (DRL) y antiniebla de LED junto con
+                            las llantas de aleación de 17” y 18”</P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imagenesyaris/tss.jpeg" alt="tss">
+                    <div class="raz-texto">
+                        <h3>TOYOTA SAFETY SENSE</h3>
+                        <P>Yaris ofrece, en las versión S, Sistema de Pre-colisión frontal (PCS)* y Sistema de alerta de
+                            cambio de carril (LDA)*. Estos sistemas avanzados de asistencia a la conducción complementan
+                            al
+                            conductor en diversas situaciones de peligro para mitigar o evitar accidentes de tránsito.
+                        </P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imageneshilux/interior1.png" alt="interior">
+                    <div class="raz-texto">
+                        <h3>CONFORT INTERIOR</h3>
+                        <P>Las versiones SRX cuentan con tapizado de cuero natural y ecológico con función de
+                            ventilación en butacas delanteras. Mientras que todas las versiones están equipadas con
+                            sensores de estacionamiento delanteros y traseros y aire acondicionado con climatizador
+                            automático digital bizona.</P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imageneshilux/pantallamultimedia.png" alt="tecnologia">
+                    <div class="raz-texto">
+                        <h3>TECNOLOGÍA</h3>
+                        <P>Las versiones SRX cuentan con Sistema de Ingreso inteligente (Smart Entry System), Sistema de
+                            encendido por botón (Push Start Button) y Sistema de visión 360° en pantalla de audio.</P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imageneshilux/motor.png" alt="motor">
+                    <div class="raz-texto">
+                        <h3>MOTOR Y PERFORMANCE</h3>
+                        <P>Motor 2.8l con 204 CV. Para maximizar la capacidad off-road, el bloqueo de diferencial
+                            trasero,
+                            disponible en todas las versiones 4x4, permite distribuir en partes iguales el torque para
+                            que
+                            las ruedas posteriores giren a la misma velocidad sin tener en cuenta las diferencias de
+                            tracción.
+                        </P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imageneshilux/airbag.png" alt="seguridad">
+                    <div class="raz-texto">
+                        <h3>SEGURIDAD</h3>
+                        <P>Todas las versiones vienen equipadas con 7 airbags: frontales y laterales para los pasajeros
+                            delanteros, de rodilla para el conductor, y de cortina delanteros y traseros, brindando un
+                            ambiente seguro para todos los ocupantes.</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerias de interior y exterior -->
+        <section class="galeria-interior">
+            <div class="galeria-grid">
+                <div class="galeria-card" onclick="abrirGaleria('interior')">
+                    <img src="../imageneshilux/intgaleria.png" alt="Interior">
+                    <div class="galeria-overlay">
+                        <h3>Interior</h3>
+                    </div>
+                </div>
+
+                <div class="galeria-card" onclick="abrirGaleria('exterior')">
+                    <img src="../imageneshilux/exterior2.png" alt="exterior">
+                    <div class="galeria-overlay">
+                        <h3>Exterior</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ventana flotante de carrusel -->
+        <div id="modal-galeria" class="modal-carrusel">
+            <span class="cerrar-modal" onclick="cerrarGaleria()">&times;</span>
+
+            <div class="modal-contenido">
+                <!-- contenedor dinamico donde JS pondra la imagen actual -->
+                <div id="modal-slide-container"></div>
+
+                <!-- Botones de navegación -->
+                <button class="modal-prev" onclick="cambiarSlideModal(-1)">&#10094;</button>
+                <button class="modal-next" onclick="cambiarSlideModal(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Seccion de diferenciales -->
+        <section class="diferenciales-contenedor">
+
+
+            <div class="dif-grid">
+
+                <!-- Confort y tecnologia -->
+                <div class="dif-card">
+                    <img src="../imageneshilux/interiortorpedo.png" alt="torpedo">
+                    <div class="dif-texto">
+                        <h3>CONFORT Y TECNOLOGIA</h3>
+                        <p>Todas las versiones de Hilux cuentan pantalla táctil de 9” con USB, Bluetooth® y conectividad
+                            inalámbrica Android Auto® y Apple CarPlay®**. Las versiones SRV y SRX cuentan con cargador
+                            inalambrico para smartphones, USB tipo C en plazas traseras (x2) y paquete de servicios
+                            conectados*.</p>
+                    </div>
+                </div>
+
+                <!-- Performance -->
+                <div class="dif-card">
+                    <img src="../imageneshilux/exterior3.png" alt="performance">
+                    <div class="dif-texto">
+                        <h3>PERFORMANCE</h3>
+                        <p>Todas las Hilux viene equipadas con Asistente de arranque en pendientes (HAC), que evita el
+                            deslizamiento involuntario y asegura un arranque suave y controlado en pendiente. Además,
+                            las versiones 4x4 cuentan con A-TRC que permite un óptimo avance en terrenos resbaladizos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Trabajo Final Integrador.</p>
+    </footer>
+
+    <script src="../js/carruselhilux.js"></script>
+    <script src="../js/versiones.js"></script>
+</body>
+
+</html>
