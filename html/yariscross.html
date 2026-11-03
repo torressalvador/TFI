@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota | Yaris Cross</title>
+    <link rel="stylesheet" href="../css/estiloprincipal.css">
+    <link rel="stylesheet" href="../css/estilomodelos.css">
+    <link rel="icon" href="../imagenes/logo-toyota.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logotoyota">
+            <h1>Toyota</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexprincipal.html">Inicio</a></li>
+                <li><a href="indexmodelos.html">Modelos</a></li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Banner principal del modelo -->
+        <div class="banner-yariscross">
+            <img src="../imagenesyariscross/banner.jpeg" alt="Banner">
+        </div>
+
+        <!-- Seccion de versiones y precios -->
+        <section class="info-general">
+            <h2>Encontrá tu versión y contáctanos.</h2>
+            <p>Seleccioná la versión que más te guste.</p>
+
+            <!-- Botones para alternar entre versiones -->
+            <div class="categorias-grid">
+                <button class="cat-btn active" onclick="filtrarVersion('xli')">XLI 1.5 CVT</button>
+                <button class="cat-btn" onclick="filtrarVersion('xei')">XEI 1.5 CVT</button>
+                <button class="cat-btn" onclick="filtrarVersion('seg')">SEG 1.5 CVT</button>
+            </div>
+
+            <!-- Caja contenedora de las versiones -->
+            <div class="modelos">
+                <!-- Version XLI  -->
+                <div id="xli" class="categoria-contenido active-cat">
+                    <div class="contenido-card">
+                        <img src="../imagenesyariscross/xli1.5cvt.png" alt="Yaris Cross XLI" class="auto-img">
+                        <h3>XLI 1.5 CVT</h3>
+                        <p class="precio">$41.464.000</p>
+                    </div>
+                </div>
+
+                <!-- Version XEI -->
+                <div id="xei" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imagenesyariscross/xei1.5cvt.png" alt="Yaris Cross XEI" class="auto-img">
+                        <h3>XEI 1.5 CVT</h3>
+                        <p class="precio">$45.260.000</p>
+                    </div>
+                </div>
+
+                <!-- Version SEG -->
+                <div id="seg" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imagenesyariscross/seg1.5cvt.png" alt="Yaris Cross SEG" class="auto-img">
+                        <h3>SEG 1.5 CVT</h3>
+                        <p class="precio">$50.224.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de confort, diseño, seguridad, perfomance -->
+        <section class="razones-container">
+            <h2>Razones para tener un Yaris Cross</h2>
+
+            <div class="razones-grid-yariscross">
+                <div class="raz-card">
+                    <img src="../imagenesyariscross/diseño.jpeg" alt="diseño">
+                    <div class="raz-texto">
+                        <h3>DISEÑO</h3>
+                        <P>El nuevo Yaris Cross presenta una postura elevada propia de un SUV, que se refuerza con
+                            llantas de 18” y neumáticos 215/55 R18 (desde las versiones XEI), que fueron diseñadas para
+                            aportar una impronta dinámica. Gracias a esta elevación, la experiencia de conducción
+                            combina la agilidad de un vehículo urbano con la comodidad de acceso y confort
+                            características de un SUV. </P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imagenesyariscross/confort.webp" alt="confort">
+                    <div class="raz-texto">
+                        <h3>CONFORT</h3>
+                        <P>Bajo una arquitectura que maximiza la sensación de amplitud, el diseño interior del Yaris
+                            Cross se destaca por el cuidado en los detalles y su funcionalidad: todo se encuentra
+                            dispuesto al alcance del conductor. Los asientos, diseñados para ofrecer una sensación de
+                            bienestar, varían según la versión: las XLI y XEI con tapizado en tela de color negro,
+                            mientras que la versión SEG presenta tapizado en cuero ecológico microperforado, también de
+                            color negro.
+                        </P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imagenesyaris/stereo.jpeg" alt="conectividad y equipamiento">
+                    <div class="raz-texto">
+                        <h3>CONECTIVIDAD Y EQUIPAMIENTO</h3>
+                        <P>Posee una central multimedia de 10” que fue desarrollada para la óptima operación desde la
+                            perspectiva del usuario, buscando un acceso simple y directo a las funciones básicas. Esta
+                            pantalla cuenta con conectividad inalámbrica de Apple CarPlay Android Auto siempre que el
+                            teléfono disponga de la función. Cabe destacar la cámara de estacionamiento con sistema de
+                            visión 360° en las versiones SEG y el cargador inalámbrico para todos los teléfonos móviles
+                            compatibles, a partir de las versiones XEI.</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerias de interior y exterior -->
+        <section class="galeria-interior">
+            <div class="galeria-grid">
+                <div class="galeria-card" onclick="abrirGaleria('interior')">
+                    <img src="../imagenesyariscross/galint.jpeg" alt="Interior">
+                    <div class="galeria-overlay">
+                        <h3>Interior</h3>
+                    </div>
+                </div>
+
+                <div class="galeria-card" onclick="abrirGaleria('exterior')">
+                    <img src="../imagenesyariscross/galext.jpeg" alt="exterior">
+                    <div class="galeria-overlay">
+                        <h3>Exterior</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ventana flotante de carrusel -->
+        <div id="modal-galeria" class="modal-carrusel">
+            <span class="cerrar-modal" onclick="cerrarGaleria()">&times;</span>
+
+            <div class="modal-contenido">
+                <!-- contenedor dinamico donde JS pondra la imagen actual -->
+                <div id="modal-slide-container"></div>
+
+                <!-- Botones de navegación -->
+                <button class="modal-prev" onclick="cambiarSlideModal(-1)">&#10094;</button>
+                <button class="modal-next" onclick="cambiarSlideModal(1)">&#10095;</button>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Trabajo Final Integrador.</p>
+    </footer>
+
+    <script src="../js/carruselyariscross.js"></script>
+    <script src="../js/versiones.js"></script>
+</body>
+
+</html>
