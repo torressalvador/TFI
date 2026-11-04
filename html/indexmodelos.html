@@ -26,87 +26,169 @@
     <!-- Contenido principal de categorias -->
     <main class="main-vehiculos">
         <section class="titulo-seccion">
-            <h2>Lineas de vehiculos</h2>
+            <h2>LINEAS DE VEHICULOS</h2>
             <p>Conoce las características principales de cada categoría diseñada para tu estilo de vida.</p>
         </section>
 
-        <div class="vehiculos-grid">
+        <!-- contenedor principal de los vehiculos -->
+        <section class="lineas-vehiculos">
+            <div class="vehiculos-grid">
 
+                <div class="vehiculo-card" onclick="toggleModelos('panel-sedan', this)">
+                    <img src="../imagenes/corolla.png" alt="Sedans">
+                    <div class="card-content">
+                        <h3>Sedan</h3>
+                        <p>Elegancia, confort y gran eficiencia de combustible, ideales tanto para la ciudad como para
+                            la
+                            ruta.
+                        </p>
 
-            <div class="vehiculo-card">
-                <img src="../imagenes/corolla.png" alt="Sedans">
-                <div class="card-content">
-                    <h3>Sedan</h3>
-                    <p>Elegancia, confort y gran eficiencia de combustible, ideales tanto para la ciudad como para la
-                        ruta.
-                    </p>
-
+                    </div>
                 </div>
+
+                <div class="vehiculo-card" onclick="toggleModelos('panel-pickup', this)">
+                    <img src="../imagenes/hilux.png" alt="Pick-Up">
+                    <div class="card-content">
+                        <h3>Pick-Up</h3>
+                        <p>Potencia extrema, robustez y máxima capacidad de carga para enfrentar cualquier terreno y
+                            trabajo
+                            duro.</p>
+
+                    </div>
+                </div>
+
+                <div class="vehiculo-card" onclick="toggleModelos('panel-suv', this)">
+                    <img src="../imagenes/corollacrosssuv.png" alt="SUV">
+                    <div class="card-content">
+                        <h3>SUV</h3>
+                        <p>Versatilidad, amplio espacio interior y tecnología avanzada de seguridad para toda la familia
+                            y
+                            la
+                            aventura.</p>
+
+                    </div>
+                </div>
+
+                <div class="vehiculo-card" onclick="toggleModelos('panel-grsport', this)">
+                    <img src="../imagenes/corollagr.png" alt="Gr Sport">
+                    <div class="card-content">
+                        <h3>GR-Sport</h3>
+                        <p>Diseño deportivo de alto rendimiento inspirado directamente en la competición
+                            automovilística.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vehiculo-card" onclick="toggleModelos('panel-comercial', this)">
+                    <img src="../imagenes/hiacefurgon.webp" alt="comercial">
+                    <div class="card-content">
+                        <h3>Comercial</h3>
+                        <p>Soluciones de transporte eficientes, máxima capacidad y funcionalidad para impulsar tu
+                            negocio.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vehiculo-card" onclick="toggleModelos('panel-hybrid', this)">
+                    <img src="../imagenes/corollacrosshybrid.webp" alt="hybrid">
+                    <div class="card-content">
+                        <h3>Hibrido</h3>
+                        <p>Tecnología sustentable con doble motor para un consumo eficiente y menor impacto ambiental.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vehiculo-card" onclick="toggleModelos('panel-camion', this)">
+                    <img src="../imagenes/hinochasisdoblefrente.png" alt="camion">
+                    <div class="card-content">
+                        <h3>Camión</h3>
+                        <p>Potencia de alto rendimiento, durabilidad extrema y gran volumen para el trabajo pesado.
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="vehiculo-card">
-                <img src="../imagenes/hilux.png" alt="Pick-Up">
-                <div class="card-content">
-                    <h3>Pick-Up</h3>
-                    <p>Potencia extrema, robustez y máxima capacidad de carga para enfrentar cualquier terreno y trabajo
-                        duro.</p>
+        </section>
 
+        <!-- Paneles desplegables -->
+
+        <div id="panel-sedan" class="panel-modelos-desplegable">
+            <div class="modelos-subgrid">
+                <div class="sub-modelo-card">
+                    <img src="../imgpagprincipal/yariscostado.webp" alt="Yaris Hatchback">
+                    <h4>YARIS HATCHBACK</h4>
+                    <a href="yaris.html" target="_blank" class="btn-ver-modelo">Ver modelo.</a>
                 </div>
             </div>
+        </div>
 
-            <div class="vehiculo-card">
-                <img src="../imagenes/corollacrosssuv.png" alt="SUV">
-                <div class="card-content">
-                    <h3>SUV</h3>
-                    <p>Versatilidad, amplio espacio interior y tecnología avanzada de seguridad para toda la familia y
-                        la
-                        aventura.</p>
-
+        <div id="panel-pickup" class="panel-modelos-desplegable">
+            <div class="modelos-subgrid">
+                <div class="sub-modelo-card">
+                    <img src="../imgpagprincipal/hiluxcostado.webp" alt="Hilux">
+                    <h4>HILUX</h4>
+                    <a href="hilux.html" target="_blank" class="btn-ver-modelo">Ver modelo.</a>
                 </div>
             </div>
+        </div>
 
-            <div class="vehiculo-card">
-                <img src="../imagenes/corollagr.png" alt="Gr Sport">
-                <div class="card-content">
-                    <h3>GR-Sport</h3>
-                    <p>Diseño deportivo de alto rendimiento inspirado directamente en la competición automovilística.
-                    </p>
+        <div id="panel-suv" class="panel-modelos-desplegable">
+            <div class="modelos-subgrid">
+                <div class="sub-modelo-card">
+                    <img src="../imgpagprincipal/suvcostado.webp" alt="SUV">
+                    <h4>YARIS CROSS</h4>
+                    <a href="yariscross.html" target="_blank" class="btn-ver-modelo">Ver modelo.</a>
                 </div>
             </div>
+        </div>
 
-            <div class="vehiculo-card">
-                <img src="../imagenes/hiacefurgon.webp" alt="comercial">
-                <div class="card-content">
-                    <h3>Comercial</h3>
-                    <p>Soluciones de transporte eficientes, máxima capacidad y funcionalidad para impulsar tu negocio.
-                    </p>
+        <div id="panel-grsport" class="panel-modelos-desplegable">
+            <div class="modelos-subgrid">
+                <div class="sub-modelo-card">
+                    <img src="../imgpagprincipal/corollagrcostado.webp" alt="gr sport">
+                    <h4>COROLLA GR-SPORT</h4>
+                    <a href="corollagr.html" target="_blank" class="btn-ver-modelo">Ver modelo.</a>
                 </div>
             </div>
+        </div>
 
-            <div class="vehiculo-card">
-                <img src="../imagenes/corollacrosshybrid.webp" alt="hybrid">
-                <div class="card-content">
-                    <h3>Hibrido</h3>
-                    <p>Tecnología sustentable con doble motor para un consumo eficiente y menor impacto ambiental.
-                    </p>
+        <div id="panel-comercial" class="panel-modelos-desplegable">
+            <div class="modelos-subgrid">
+                <div class="sub-modelo-card">
+                    <img src="../imagenes/hiacefurgonlateral.webp" alt="Furgon">
+                    <h4>HIACE</h4>
+                    <a href="#" target="_blank"  class="btn-ver-modelo">Ver modelo.</a>
                 </div>
             </div>
+        </div>
 
-            <div class="vehiculo-card">
-                <img src="../imagenes/hinochasisdoblefrente.png" alt="camion">
-                <div class="card-content">
-                    <h3>Camion</h3>
-                    <p>Potencia de alto rendimiento, durabilidad extrema y gran volumen para el trabajo pesado.
-                    </p>
+        <div id="panel-hybrid" class="panel-modelos-desplegable">
+            <div class="modelos-subgrid">
+                <div class="sub-modelo-card">
+                    <img src="../imagenes/corollacrosshybridlateral.webp" alt="corolla cross">
+                    <h4>COROLLA CROSS</h4>
+                    <a href="#" target="_blank" class="btn-ver-modelo">Ver modelo.</a>
                 </div>
             </div>
+        </div>
 
+        <div id="panel-camion" class="panel-modelos-desplegable">
+            <div class="modelos-subgrid">
+                <div class="sub-modelo-card">
+                    <img src="../imagenes/hinochasisdoble.png" alt="hino serie 300">
+                    <h4>HINO SERIE 300</h4>
+                    <a href="#" target="_blank" class="btn-ver-modelo">Ver modelo.</a>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer class="pie-pagina">
         <p>&copy; 2026 Trabajo Final Integrador.</p>
     </footer>
+
+    <script src="../js/modelosdespegables.js"></script>
 
 </body>
 
