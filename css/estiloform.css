@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* --- Estilos generales --- */
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +6,15 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
 body {
     background-color: #f9f9f9;
     color: #111;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-
-
-/* menu de navegacion estilo a la pagina de Toyota*/
+/* --- Menú de navegación -- */
 header {
     display: flex;
     justify-content: space-between;
@@ -61,7 +61,6 @@ nav ul li a:hover {
     color: #eb0a1e;
 }
 
-
 .logotoyota h1 {
     font-size: 1.4rem;
     font-weight: bold;
@@ -70,16 +69,20 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
+/* --- Contenedor del formulario --- */
 .form-container {
     max-width: 900px;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px 20px;
+    flex: 1;
 }
 
-/* Encabezados alineados a la izquierda */
+/* Encabezados */
 h2 {
     font-size: 28px;
     font-weight: 700;
+    margin-top: 30px;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -98,7 +101,7 @@ h2 {
     color: #000;
 }
 
-/* Distribucion en grilla para emular el diseño */
+/* Distribución en grilla */
 .form-row {
     display: flex;
     gap: 20px;
@@ -124,7 +127,7 @@ label {
     color: #333;
 }
 
-/* Estilos para inputs, select y textarea  */
+/* Estilos para inputs, select y textarea */
 input,
 select,
 textarea {
@@ -167,6 +170,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    flex: 1;
 }
 
 button[type="reset"] {
@@ -190,8 +194,9 @@ button[type="reset"]:hover {
 }
 
 .pie-pagina {
+    width: 100%;
     margin-top: auto;
-    padding: 15px 0;
+    padding: 20px 0;
     text-align: center;
     background-color: #fff;
     border-top: 1px solid #e0e0e0;
@@ -219,4 +224,41 @@ button[type="reset"]:hover {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Adaptabilidad responsiva (Media Queries) --- */
+@media (max-width: 768px) {
+    header {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .logotoyota h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 0.85rem;
+    }
 }

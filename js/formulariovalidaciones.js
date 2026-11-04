@@ -19,7 +19,7 @@ form.addEventListener("submit", function (event) {
     } else if (nombre.length < 10 || nombre.length > 50) {
         errorNombre.textContent = "El nombre debe tener un mínimo de 10 y un máximo de 50 caracteres."
         valido = false;
-    } else if (!soloLetras.test(nombre)){
+    } else if (!soloLetras.test(nombre)) {
         errorNombre.textContent = "El nombre solo debe contener letras.";
         valido = false;
     } else {
@@ -48,6 +48,8 @@ form.addEventListener("submit", function (event) {
     } else {
         errorEmail.textContent = "";
     }
+
+    // validacion de telefono
 
     const telefono = document.getElementById("telefono").value.trim();
     const errorTelefono = document.getElementById("errorTelefono");
@@ -90,17 +92,52 @@ form.addEventListener("submit", function (event) {
 
     if (valido) {
         const mensajeExito = document.getElementById("mensajeExito");
-
-        // Muestra el mensaje dinamico
-        mensajeExito.textContent = "Su formulario se envio correctamente.";
+        mensajeExito.textContent = "Su formulario se envió correctamente. Resumen de datos:";
         mensajeExito.classList.remove("oculto");
 
-        // Deshabilita el formulario y resetea los campos
-        form.reset();
+        // Se elimina resumen anterior si existe alguno para que no se duplique
+        let resumenAnterior = document.getElementById("resumenEnvio");
+        if (resumenAnterior) {
+            resumenAnterior.remove();
+        }
 
-        //  Espera 2 segundos y recarga la pagina
-        setTimeout(() => {
-            location.reload();
-        }, 3000);
+        // Se crea el resumen de datos 
+        const contenedorResumen = document.createElement("div");
+        contenedorResumen.id = "resumenEnvio";
+        contenedorResumen.style.marginTop = "15px";
+        contenedorResumen.style.padding = "15px";
+        contenedorResumen.style.backgroundColor = "#fff";
+        contenedorResumen.style.border = "1px solid #ccc";
+        contenedorResumen.style.borderRadius = "4px";
+        contenedorResumen.style.color = "#333";
+        contenedorResumen.style.textAlign = "left";
+
+        // Se crea los elementos internos con la información ingresada
+        const tituloResumen = document.createElement("h4");
+        tituloResumen.textContent = "Datos registrados:";
+        tituloResumen.style.marginBottom = "8px";
+        contenedorResumen.appendChild(tituloResumen);
+
+        const datos = [
+            `Nombre y Apellido: ${nombre}`,
+            `Género: ${genero}`,
+            `Email: ${email}`,
+            `Teléfono: ${telefono}`,
+            `Fecha de Nacimiento: ${nacimiento}`,
+            `Mensaje: ${document.getElementById("mensaje").value.trim() || "Sin mensaje"}`
+        ];
+
+        datos.forEach(item => {
+            const parrafo = document.createElement("p");
+            parrafo.textContent = item;
+            parrafo.style.margin = "4px 0";
+            contenedorResumen.appendChild(parrafo);
+        });
+
+        // Se inserta el resumen creado debajo del mensaje de exito
+        mensajeExito.appendChild(contenedorResumen);
+
+        // Se resetea el formulario para que quede listo para un nuevo envio
+        form.reset();
     }
 });

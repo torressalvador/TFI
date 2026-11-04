@@ -236,12 +236,27 @@ nav ul li a:hover {
     }
 }
 
+@media (max-width: 768px) {
+    header {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 500px) {
     .vehiculo-card {
-        width: 100%; /* 1 sola columna en celulares */
+        width: 100%;
     }
-    header {
-        padding: 15px 20px;
+    
+    .sub-modelo-card {
+        width: 100%;
     }
 }
 

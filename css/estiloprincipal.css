@@ -6,13 +6,19 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
 body {
     background-color: #f9f9f9;
     color: #111;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* menu de navegacion estilo a la pagina de Toyota*/
+main {
+    flex: 1;
+}
+
+/* Menú de navegación  */
 header {
     display: flex;
     justify-content: space-between;
@@ -32,7 +38,6 @@ header {
     color: #000;
     text-transform: uppercase;
 }
-
 
 nav ul {
     display: flex;
@@ -68,19 +73,18 @@ nav ul li a:hover {
     color: #eb0a1e;
 }
 
-/* carrusel de imagenes*/
+/* Carrusel de imágenes adaptable */
 .carrusel-container {
     position: relative;
     max-width: 1200px;
+    width: 100%;
     height: 450px;
     margin: 30px auto;
     border-radius: 12px;
     overflow: hidden;
     background-color: #1a1a1ad8;
-    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.015);
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.05);
 }
-
-
 
 .slide-fade {
     display: none;
@@ -97,12 +101,10 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
-
-
-/* botones de navegacion del carrusel */
+/* Botones de navegación del carrusel */
 .previo,
 .siguiente {
     position: absolute;
@@ -130,7 +132,7 @@ nav ul li a:hover {
 
 .previo:hover,
 .siguiente:hover {
-    background-color: rgba(235, 10, 29, 0.575);
+    background-color: rgba(235, 10, 29, 0.8);
 }
 
 /* Indicadores / Puntos inferiores */
@@ -141,7 +143,6 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     padding: 15px 0;
-    background-color: linear-gradient(to top, rgba(0, 0, 0, 0.219), transparent);
     z-index: 10;
 }
 
@@ -161,8 +162,7 @@ nav ul li a:hover {
     background-color: #eb0a1e;
 }
 
-/* efecto animacion para desvanecimiento en carrusel */
-
+/* Efecto animación para desvanecimiento en carrusel */
 @keyframes fade {
     from {
         opacity: .2;
@@ -173,4 +173,64 @@ nav ul li a:hover {
     }
 }
 
+/* --- ADAPTABILIDAD RESPONSIVA (MEDIA QUERIES) --- */
 
+@media (max-width: 1024px) {
+    .carrusel-container {
+        max-width: 90%;
+        height: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .carrusel-container {
+        height: 280px;
+        margin: 15px auto;
+        border-radius: 0;
+        /* Ocupa mejor el ancho en tablets y móviles */
+    }
+
+    .previo,
+    .siguiente {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logotoyota h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 0.85rem;
+    }
+
+    .carrusel-container {
+        height: 210px;
+    }
+}
+
+/* --- Pie de página --- */
+.pie-pagina {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: auto;
+}

@@ -1,108 +1,10 @@
 /* --- Estilos para la página del vehiculo a mostrar --- */
-
-
-.banner {
-    display: flex;
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 100%;
-    height: 113vw;
-}
-
-.banner-hilux {
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.banner-hilux img {
-    width: 100%;
-    height: 70vh;
-    min-height: 320px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
-.banner-yariscross {
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.banner-yariscross img {
-    width: 100%;
-    height: 70vh;
-    min-height: 320px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
-.banner-corollagr {
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.banner-corollagr img {
-    width: 100%;
-    height: 70vh;
-    min-height: 320px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
-.banner-hiace {
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.banner-hiace img {
-    width: 100%;
-    height: 70vh;
-    min-height: 320px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
-.banner-hibrida {
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.banner-hibrida img {
-    width: 100%;
-    height: 70vh;
-    min-height: 320px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
+.banner,
+.banner-hilux,
+.banner-yariscross,
+.banner-corollagr,
+.banner-hiace,
+.banner-hibrida,
 .banner-hino {
     width: 100%;
     max-width: 100%;
@@ -112,28 +14,32 @@
     overflow: hidden;
 }
 
+.banner img,
+.banner-hilux img,
+.banner-yariscross img,
+.banner-corollagr img,
+.banner-hiace img,
+.banner-hibrida img,
 .banner-hino img {
     width: 100%;
     height: 70vh;
-    min-height: 320px;
+    min-height: 280px;
     object-fit: cover;
     object-position: center;
     display: block;
 }
 
 
-
-
-@media (min-width: 1080px) {
-    .banner {
-        position: relative;
-        align-items: flex-start;
-        width: 100%;
-        max-width: 73.37rem;
-        height: auto;
-        margin: 0 auto;
-        padding: 0;
-        background-color: initial;
+@media (max-width: 768px) {
+    .banner img,
+    .banner-hilux img,
+    .banner-yariscross img,
+    .banner-corollagr img,
+    .banner-hiace img,
+    .banner-hibrida img,
+    .banner-hino img {
+        height: 25vh;
+        /* En móviles se adapta a una altura más compacta */
     }
 }
 
@@ -167,20 +73,18 @@
     width: 100%;
 }
 
-/* Muestra  la versión que tenga la clase activa */
+/* Muestra la versión que tenga la clase activa */
 .categoria-contenido.active-cat {
     display: flex !important;
 }
 
-
 .categorias-grid {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
-
 
 .cat-btn {
     background-color: transparent;
@@ -199,7 +103,6 @@
     color: #eb0a1e;
 }
 
-
 .cat-btn.active::after {
     content: '';
     position: absolute;
@@ -217,7 +120,7 @@
     margin: 15px 0;
 }
 
-/* Sección de razones  */
+/* Sección de razones */
 .razones-container {
     max-width: 900px;
     margin: 60px auto;
@@ -231,20 +134,15 @@
     text-align: center;
 }
 
-.razones-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-}
-
-.razones-grid-yariscross {
+.razones-grid,
+.razones-grid-yariscross,
+.razones-grid-hilux {
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 30px !important;
     max-width: 800px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
-
 
 .raz-card {
     display: flex;
@@ -263,6 +161,7 @@
 
 .raz-card img {
     width: 100%;
+    height: 220px;
     object-fit: cover;
 }
 
@@ -282,23 +181,13 @@
     line-height: 1.5;
 }
 
-/* Para pantallas más grandes  */
+/* Para pantallas más grandes (Tablets y PCs) */
 @media (min-width: 768px) {
-    .razones-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
-.razones-grid-hilux {
-    /* Para el formato de la pagina de la Hilux */
-    display: grid !important;
-    grid-template-columns: 1fr;
-    gap: 30px !important;
-}
-
-@media (min-width: 768px) {
+    .razones-grid,
     .razones-grid-hilux {
         grid-template-columns: repeat(3, 1fr) !important;
+        max-width: 100%;
     }
 }
 
@@ -353,9 +242,7 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-
 /* Estilo para los diferenciales */
-
 .diferenciales-contenedor {
     max-width: 1000px;
     margin: 60px auto;
@@ -374,7 +261,6 @@
     grid-template-columns: 1fr;
     gap: 30px;
 }
-
 
 .dif-card {
     display: flex;
@@ -415,7 +301,6 @@
 }
 
 /* Para computadoras: galeria y diferenciales en 2 columnas */
-
 @media (min-width: 768px) {
     .galeria-grid {
         grid-template-columns: 1fr 1fr;
@@ -440,7 +325,7 @@
 
 .dif-card-camion {
     display: flex !important;
-    flex-direction: row !important; 
+    flex-direction: row !important;
     align-items: center;
     background-color: #fff;
     border: 1px solid #eaeaea;
@@ -454,7 +339,6 @@
     transform: translateY(-5px);
 }
 
-/* La imagen ocupa la mitad izquierda */
 .dif-card-camion img {
     width: 50% !important;
     height: 320px !important;
@@ -462,7 +346,6 @@
     display: block;
 }
 
-/* La caja de texto ocupa la mitad derecha */
 .dif-card-camion .dif-texto,
 .dif-card-camion div:not(img) {
     width: 50% !important;
@@ -484,32 +367,35 @@
     line-height: 1.6;
 }
 
-/* Efecto espejo: invierte el orden en tarjetas alternas */
 .dif-card-camion:nth-child(even) {
     flex-direction: row-reverse !important;
 }
 
 /* Responsivo para celulares: se apilan verticalmente */
 @media (max-width: 768px) {
+
     .dif-card-camion,
     .dif-card-camion:nth-child(even) {
         flex-direction: column !important;
     }
+
     .dif-card-camion img,
     .dif-card-camion .dif-texto,
     .dif-card-camion div:not(img) {
         width: 100% !important;
     }
+
     .dif-card-camion img {
         height: 220px !important;
     }
+
     .dif-card-camion .dif-texto {
         padding: 25px !important;
     }
 }
 
 
-/* --- Estilos del carrusel Flotante --- */
+/* --- Estilos del carrusel Flotante (Modal) --- */
 .modal-carrusel {
     display: none;
     position: fixed;
@@ -537,44 +423,76 @@
     border-radius: 6px;
 }
 
-/* Botón de cierre (X) */
+/* Botón de cierre (X) fijo en celulares para no requerir scroll */
 .cerrar-modal {
-    position: absolute;
-    top: 30px;
-    right: 40px;
+    position: fixed;
+    top: 15px;
+    right: 20px;
     color: #fff;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    z-index: 1050;
 }
 
 .cerrar-modal:hover {
-    color: #eb0a1e;
+    background-color: #eb0a1e;
 }
 
-/* Flechas de navegación del modal */
+/* Flechas de navegación del modal adaptadas para celulares */
 .modal-prev,
 .modal-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     border: none;
-    font-size: 24px;
-    padding: 15px;
+    font-size: 20px;
+    padding: 10px 14px;
     cursor: pointer;
     transition: background-color 0.3s;
-    border-radius: 4px;
+    border-radius: 50%;
+    z-index: 1020;
 }
 
 .modal-prev {
-    left: -50px;
+    left: 10px;
 }
 
 .modal-next {
-    right: -50px;
+    right: 10px;
+}
+
+/* En PC vuelven a su posición lateral original fuera de la foto */
+@media (min-width: 768px) {
+    .cerrar-modal {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .modal-prev {
+        left: -50px;
+        border-radius: 4px;
+    }
+
+    .modal-next {
+        right: -50px;
+        border-radius: 4px;
+    }
 }
 
 .modal-prev:hover,
