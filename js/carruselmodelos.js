@@ -1,16 +1,16 @@
 const imagenesInterior = [
-    { src: "../imagenesyaris/pantallamultimedia.webp", alt: "Tablero"},
-    { src: "../imagenesyaris/interiorpanelystereo.png", alt: "Tablero"},
-    { src: "../imagenesyaris/interiorversions.jpeg", alt: "Version s"}
+    { src: "./imagenesyaris/pantallamultimedia.webp", alt: "Tablero"},
+    { src: "./imagenesyaris/interiorpanelystereo.png", alt: "Tablero"},
+    { src: "./imagenesyaris/interiorversions.jpeg", alt: "Version s"}
 ];
 
 const imagenesExterior = [
-    { src: "../imagenesyaris/exteriorcalle.webp", alt: "exterior calle"},
-    { src: "../imagenesyaris/exteriortrasero.jpeg", alt: "exterior trasero"},
-    { src: "../imagenesyaris/exteriorfrente.jpeg", alt: "frente"},
-    { src: "../imagenesyaris/exteriorgrande.jpeg", alt: "exterior con fondo blanco"},
-    { src: "../imagenesyaris/exteriorfondotrasero.jpeg", alt: "exterior con fondo blanco"},
-    { src: "../imagenesyaris/atardecer.jpeg", alt: "atardecer"}
+    { src: "./imagenesyaris/exteriorcalle.webp", alt: "exterior calle"},
+    { src: "./imagenesyaris/exteriortrasero.jpeg", alt: "exterior trasero"},
+    { src: "./imagenesyaris/exteriorfrente.jpeg", alt: "frente"},
+    { src: "./imagenesyaris/exteriorgrande.jpeg", alt: "exterior con fondo blanco"},
+    { src: "./imagenesyaris/exteriorfondotrasero.jpeg", alt: "exterior con fondo blanco"},
+    { src: "./imagenesyaris/atardecer.jpeg", alt: "atardecer"}
 ];
 
 let categoriaActual = [];

@@ -1,13 +1,13 @@
 const imagenesInterior = [
-    { src: "../imageneshilux/intgaleria.png", alt: "Torpedo"},
-    { src: "../imageneshilux/intgaleria2.png", alt: "Interior"},
-    { src: "../imageneshilux/intgaleria3.png", alt: "tablero"},
-    { src: "../imageneshilux/intgaleria4.png", alt: "torpedo srx4x4at"}
+    { src: "./imageneshilux/intgaleria.png", alt: "Torpedo"},
+    { src: "./imageneshilux/intgaleria2.png", alt: "Interior"},
+    { src: "./imageneshilux/intgaleria3.png", alt: "tablero"},
+    { src: "./imageneshilux/intgaleria4.png", alt: "torpedo srx4x4at"}
 ];
 
 const imagenesExterior = [
-    { src: "../imageneshilux/extgaleria1.png", alt: "exterior 1"},
-    { src: "../imageneshilux/extgaleria2.png", alt: "exterior 2"}
+    { src: "./imageneshilux/extgaleria1.png", alt: "exterior 1"},
+    { src: "./imageneshilux/extgaleria2.png", alt: "exterior 2"}
 ];
 
 let categoriaActual = [];

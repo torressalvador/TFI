@@ -1,23 +1,23 @@
 const imagenesInterior = [
-    { src: "../imageneshiace/intgal1.jpeg", alt: "interior 1"},
-    { src: "../imageneshiace/intgal2.jpeg", alt: "interior 2"},
-    { src: "../imageneshiace/intgal3.jpeg", alt: "interior 3"},
-    { src: "../imageneshiace/intgal4.jpeg", alt: "interior 4"},
-    { src: "../imageneshiace/intgal5.jpeg", alt: "interior 5"},
-    { src: "../imageneshiace/intgal6.jpeg", alt: "interior 6"},
-    { src: "../imageneshiace/intgal7.jpeg", alt: "interior 7"},
-    { src: "../imageneshiace/intgal8.jpeg", alt: "interior 8"},
-    { src: "../imageneshiace/intgal9.png", alt: "interior 9"},
-    { src: "../imageneshiace/intgal10.jpeg", alt: "interior 10"}
+    { src: "./imageneshiace/intgal1.jpeg", alt: "interior 1"},
+    { src: "./imageneshiace/intgal2.jpeg", alt: "interior 2"},
+    { src: "./imageneshiace/intgal3.jpeg", alt: "interior 3"},
+    { src: "./imageneshiace/intgal4.jpeg", alt: "interior 4"},
+    { src: "./imageneshiace/intgal5.jpeg", alt: "interior 5"},
+    { src: "./imageneshiace/intgal6.jpeg", alt: "interior 6"},
+    { src: "./imageneshiace/intgal7.jpeg", alt: "interior 7"},
+    { src: "./imageneshiace/intgal8.jpeg", alt: "interior 8"},
+    { src: "./imageneshiace/intgal9.png", alt: "interior 9"},
+    { src: "./imageneshiace/intgal10.jpeg", alt: "interior 10"}
 ];
 
 const imagenesExterior = [
-    { src: "../imageneshiace/extgal1.jpeg", alt: "exterior 1"},
-    { src: "../imageneshiace/extgal2.jpeg", alt: "exterior 2"},
-    { src: "../imageneshiace/extgal3.jpeg", alt: "exterior 3"},
-    { src: "../imageneshiace/extgal4.jpeg", alt: "exterior 4"},
-    { src: "../imageneshiace/extgal5.jpeg", alt: "exterior 5"},
-    { src: "../imageneshiace/extgal6.jpeg", alt: "exterior 6"}
+    { src: "./imageneshiace/extgal1.jpeg", alt: "exterior 1"},
+    { src: "./imageneshiace/extgal2.jpeg", alt: "exterior 2"},
+    { src: "./imageneshiace/extgal3.jpeg", alt: "exterior 3"},
+    { src: "./imageneshiace/extgal4.jpeg", alt: "exterior 4"},
+    { src: "./imageneshiace/extgal5.jpeg", alt: "exterior 5"},
+    { src: "./imageneshiace/extgal6.jpeg", alt: "exterior 6"}
 ];
 
 let categoriaActual = [];

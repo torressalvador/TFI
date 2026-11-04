@@ -1,13 +1,13 @@
 const imagenesCarrusel = [
-    { src: "../imagenescarrusel/carrusel1.jpg", alt: "Diapositivas de presentacion" },
-    { src: "../imagenescarrusel/carrusel2.jpg", alt: "Diapositivas de presentacion" },
-    { src: "../imagenescarrusel/carrusel3.jpeg", alt: "Diapositivas de presentacion" },
-    { src: "../imagenescarrusel/carrusel4.jpeg", alt: "Diapositivas de presentacion" },
-    { src: "../imagenescarrusel/carrusel5.jpeg", alt: "Diapositivas de presentacion" },
-    { src: "../imagenescarrusel/carrusel6.jpg", alt: "Diapositivas de presentacion" },
-    { src: "../imagenescarrusel/carrusel7.jpeg", alt: "Diapositivas de presentacion" },
-    { src: "../imagenescarrusel/carrusel8.jpeg", alt: "Diapositivas de presentacion" },
-    { src: "../imagenescarrusel/carrusel9.png", alt: "Diapositivas de presentacion" },
+    { src: "./imagenescarrusel/carrusel1.jpg", alt: "Diapositivas de presentacion" },
+    { src: "./imagenescarrusel/carrusel2.jpg", alt: "Diapositivas de presentacion" },
+    { src: "./imagenescarrusel/carrusel3.jpeg", alt: "Diapositivas de presentacion" },
+    { src: "./imagenescarrusel/carrusel4.jpeg", alt: "Diapositivas de presentacion" },
+    { src: "./imagenescarrusel/carrusel5.jpeg", alt: "Diapositivas de presentacion" },
+    { src: "./imagenescarrusel/carrusel6.jpg", alt: "Diapositivas de presentacion" },
+    { src: "./imagenescarrusel/carrusel7.jpeg", alt: "Diapositivas de presentacion" },
+    { src: "./imagenescarrusel/carrusel8.jpeg", alt: "Diapositivas de presentacion" },
+    { src: "./imagenescarrusel/carrusel9.png", alt: "Diapositivas de presentacion" },
 ]
 
 let slideIndex = 1;

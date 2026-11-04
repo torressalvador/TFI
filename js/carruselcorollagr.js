@@ -1,22 +1,22 @@
 const imagenesInterior = [
-    { src: "../imagenescorollagr/intgal1.jpeg", alt: "interior"},
-    { src: "../imagenescorollagr/intgal2.png", alt: "pantalla"},
-    { src: "../imagenescorollagr/intgal3.png", alt: "controles"},
-    { src: "../imagenescorollagr/intgal4.png", alt: "tablero"},
-    { src: "../imagenescorollagr/intgal5.png", alt: "puerta"},
-    { src: "../imagenescorollagr/intgal6.png", alt: "lateral"},
-    { src: "../imagenescorollagr/intgal7.png", alt: "techo"},
-    { src: "../imagenescorollagr/intgal8.jpeg", alt: "interiorperspectiva"}
+    { src: "./imagenescorollagr/intgal1.jpeg", alt: "interior"},
+    { src: "./imagenescorollagr/intgal2.png", alt: "pantalla"},
+    { src: "./imagenescorollagr/intgal3.png", alt: "controles"},
+    { src: "./imagenescorollagr/intgal4.png", alt: "tablero"},
+    { src: "./imagenescorollagr/intgal5.png", alt: "puerta"},
+    { src: "./imagenescorollagr/intgal6.png", alt: "lateral"},
+    { src: "./imagenescorollagr/intgal7.png", alt: "techo"},
+    { src: "./imagenescorollagr/intgal8.jpeg", alt: "interiorperspectiva"}
 ];
 
 const imagenesExterior = [
-    { src: "../imagenescorollagr/extgal1.png", alt: "exterior 1"},
-    { src: "../imagenescorollagr/extgal2.png", alt: "exterior 2"},
-    { src: "../imagenescorollagr/extgal3.png", alt: "exterior 3"},
-    { src: "../imagenescorollagr/extgal4.png", alt: "exterior 4"},
-    { src: "../imagenescorollagr/extgal5.png", alt: "exterior 5"},
-    { src: "../imagenescorollagr/extgal6.jpeg", alt: "exterior 6"},
-    { src: "../imagenescorollagr/extgal7.png", alt: "exterior 7"}
+    { src: "./imagenescorollagr/extgal1.png", alt: "exterior 1"},
+    { src: "./imagenescorollagr/extgal2.png", alt: "exterior 2"},
+    { src: "./imagenescorollagr/extgal3.png", alt: "exterior 3"},
+    { src: "./imagenescorollagr/extgal4.png", alt: "exterior 4"},
+    { src: "./imagenescorollagr/extgal5.png", alt: "exterior 5"},
+    { src: "./imagenescorollagr/extgal6.jpeg", alt: "exterior 6"},
+    { src: "./imagenescorollagr/extgal7.png", alt: "exterior 7"}
 ];
 
 let categoriaActual = [];

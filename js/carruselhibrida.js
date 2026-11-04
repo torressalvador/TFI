@@ -1,21 +1,21 @@
 const imagenesInterior = [
-    { src: "../imageneshibrida/intgal1.png", alt: "interior 1"},
-    { src: "../imageneshibrida/intgal2.jpeg", alt: "interior 2"},
-    { src: "../imageneshibrida/intgal3.png", alt: "interior 3"},
-    { src: "../imageneshibrida/intgal4.jpeg", alt: "interior 4"},
-    { src: "../imageneshibrida/intgal5.jpeg", alt: "interior 5"},
-    { src: "../imageneshibrida/intgal6.jpeg", alt: "interior 6"},
-    { src: "../imageneshibrida/intgal7.jpeg", alt: "interior 7"}
+    { src: "./imageneshibrida/intgal1.png", alt: "interior 1"},
+    { src: "./imageneshibrida/intgal2.jpeg", alt: "interior 2"},
+    { src: "./imageneshibrida/intgal3.png", alt: "interior 3"},
+    { src: "./imageneshibrida/intgal4.jpeg", alt: "interior 4"},
+    { src: "./imageneshibrida/intgal5.jpeg", alt: "interior 5"},
+    { src: "./imageneshibrida/intgal6.jpeg", alt: "interior 6"},
+    { src: "./imageneshibrida/intgal7.jpeg", alt: "interior 7"}
 ];
 
 const imagenesExterior = [
-    { src: "../imageneshibrida/extgal1.jpeg", alt: "exterior 1"},
-    { src: "../imageneshibrida/extgal2.jpeg", alt: "exterior 2"},
-    { src: "../imageneshibrida/extgal3.jpeg", alt: "exterior 3"},
-    { src: "../imageneshibrida/extgal4.jpeg", alt: "exterior 4"},
-    { src: "../imageneshibrida/extgal5.jpeg", alt: "exterior 5"},
-    { src: "../imageneshibrida/extgal6.png", alt: "exterior 6"},
-    { src: "../imageneshibrida/extgal7.jpeg", alt: "exterior 7"}
+    { src: "./imageneshibrida/extgal1.jpeg", alt: "exterior 1"},
+    { src: "./imageneshibrida/extgal2.jpeg", alt: "exterior 2"},
+    { src: "./imageneshibrida/extgal3.jpeg", alt: "exterior 3"},
+    { src: "./imageneshibrida/extgal4.jpeg", alt: "exterior 4"},
+    { src: "./imageneshibrida/extgal5.jpeg", alt: "exterior 5"},
+    { src: "./imageneshibrida/extgal6.png", alt: "exterior 6"},
+    { src: "./imageneshibrida/extgal7.jpeg", alt: "exterior 7"}
 ];
 
 let categoriaActual = [];

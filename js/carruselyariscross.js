@@ -1,20 +1,20 @@
 const imagenesInterior = [
-    { src: "../imagenesyariscross/galint.jpeg", alt: "interior"},
-    { src: "../imagenesyariscross/intgal2.jpeg", alt: "techo"},
-    { src: "../imagenesyariscross/intgal3.jpeg", alt: "caja"},
-    { src: "../imagenesyariscross/intgal4.jpeg", alt: "torpedo"},
-    { src: "../imagenesyariscross/intgal5.jpeg", alt: "pantalla"},
-    { src: "../imagenesyariscross/intgal6.jpeg", alt: "tablero"}
+    { src: "./imagenesyariscross/galint.jpeg", alt: "interior"},
+    { src: "./imagenesyariscross/intgal2.jpeg", alt: "techo"},
+    { src: "./imagenesyariscross/intgal3.jpeg", alt: "caja"},
+    { src: "./imagenesyariscross/intgal4.jpeg", alt: "torpedo"},
+    { src: "./imagenesyariscross/intgal5.jpeg", alt: "pantalla"},
+    { src: "./imagenesyariscross/intgal6.jpeg", alt: "tablero"}
 ];
 
 const imagenesExterior = [
-    { src: "../imagenesyariscross/galext.jpeg", alt: "exterior 1"},
-    { src: "../imagenesyariscross/extgal2.jpeg", alt: "exterior 2"},
-    { src: "../imagenesyariscross/extgal3.jpeg", alt: "exterior 3"},
-    { src: "../imagenesyariscross/extgal4.jpeg", alt: "exterior 4"},
-    { src: "../imagenesyariscross/extgal5.jpeg", alt: "exterior 5"},
-    { src: "../imagenesyariscross/extgal6.jpeg", alt: "exterior 6"},
-    { src: "../imagenesyariscross/extgal7.jpeg", alt: "exterior 7"}
+    { src: "./imagenesyariscross/galext.jpeg", alt: "exterior 1"},
+    { src: "./imagenesyariscross/extgal2.jpeg", alt: "exterior 2"},
+    { src: "./imagenesyariscross/extgal3.jpeg", alt: "exterior 3"},
+    { src: "./imagenesyariscross/extgal4.jpeg", alt: "exterior 4"},
+    { src: "./imagenesyariscross/extgal5.jpeg", alt: "exterior 5"},
+    { src: "./imagenesyariscross/extgal6.jpeg", alt: "exterior 6"},
+    { src: "./imagenesyariscross/extgal7.jpeg", alt: "exterior 7"}
 ];
 
 let categoriaActual = [];
