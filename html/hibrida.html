@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota | Corolla Cross Hybrid</title>
+    <link rel="stylesheet" href="../css/estiloprincipal.css">
+    <link rel="stylesheet" href="../css/estilomodelos.css">
+    <link rel="icon" href="../imagenes/logo-toyota.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logotoyota">
+            <h1>Toyota</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexprincipal.html">Inicio</a></li>
+                <li><a href="indexmodelos.html">Modelos</a></li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Banner principal del modelo -->
+        <div class="banner-hibrida">
+            <img src="../imageneshibrida/banner.jpeg" alt="Banner">
+        </div>
+
+        <!-- Seccion de versiones y precios -->
+        <section class="info-general">
+            <h2>Encontrá tu versión y contáctanos.</h2>
+            <p>Seleccioná la versión que más te guste.</p>
+
+            <!-- Botones para alternar entre versiones -->
+            <div class="categorias-grid">
+                <button class="cat-btn active" onclick="filtrarVersion('xei')">XEI HEV 1.8 eCVT</button>
+                <button class="cat-btn" onclick="filtrarVersion('seg')">SEG HEV 1.8 eCVT</button>
+            </div>
+
+            <!-- Caja contenedora de las versiones -->
+            <div class="modelos">
+                <!-- Version XEI  -->
+                <div id="xei" class="categoria-contenido active-cat">
+                    <div class="contenido-card">
+                        <img src="../imageneshibrida/xei.png" alt="Corolla Cross Hibrida" class="auto-img">
+                        <h3>XEI HEV 1.8 eCVT</h3>
+                        <p class="precio">$57.682.000</p>
+                    </div>
+                </div>
+
+                <!-- Version SEG -->
+                <div id="seg" class="categoria-contenido">
+                    <div class="contenido-card">
+                        <img src="../imageneshibrida/seg.png" alt="Corolla Cross Hibrida SEG" class="auto-img">
+                        <h3>SEG HEV 1.8 eCVT</h3>
+                        <p class="precio">$63.684.000</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seccion de razones -->
+        <section class="razones-container">
+            <h2>Razones para tener un Corolla Cross Hybrid</h2>
+
+            <div class="razones-grid">
+                <div class="raz-card">
+                    <img src="../imageneshibrida/motor.png" alt="motor">
+                    <div class="raz-texto">
+                        <h3>LA ÚNICA MOTORIZACIÓN HÍBRIDA DEL SEGMENTO</h3>
+                        <P>El Corolla Cross viene equipado con un sistema híbrido compuesto por un motor a combustión de
+                            1.8 lts. combinado con uno eléctrico, y una transmisión de 10 velocidades preprogramadas
+                            denominada e-CVT. Se alimenta de una batería que se recarga automáticamente al desacelerar o
+                            frenar, brindando una experiencia de conducción única, con un andar silencioso, bajo costo
+                            de mantenimiento, baja emisión de CO2, una potencia de 122 CV y un excelente consumo de
+                            combustible.
+                        </P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imageneshibrida/diseñomoderno.png" alt="diseño">
+                    <div class="raz-texto">
+                        <h3>DISEÑO MODERNO</h3>
+                        <P>Referente en su segmento con una imagen totalmente renovada que transmite su espíritu moderno
+                            y elegante.
+                        </P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imageneshibrida/tecnologiayconfortinterior.jpeg" alt="confort y tecnologia">
+                    <div class="raz-texto">
+                        <h3>CONFORT Y TECNOLOGÍA</h3>
+                        <P>Amplio espacio interior, freno de estacionamiento electrónico y cargador inalámbrico para
+                            smartphones**.</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerias de interior y exterior -->
+        <section class="galeria-interior">
+            <div class="galeria-grid">
+                <div class="galeria-card" onclick="abrirGaleria('interior')">
+                    <img src="../imageneshibrida/intgal1.png" alt="Interior">
+                    <div class="galeria-overlay">
+                        <h3>Interior</h3>
+                    </div>
+                </div>
+
+                <div class="galeria-card" onclick="abrirGaleria('exterior')">
+                    <img src="../imageneshibrida/extgal1.jpeg" alt="exterior">
+                    <div class="galeria-overlay">
+                        <h3>Exterior</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ventana flotante de carrusel -->
+        <div id="modal-galeria" class="modal-carrusel">
+            <span class="cerrar-modal" onclick="cerrarGaleria()">&times;</span>
+
+            <div class="modal-contenido">
+                <!-- contenedor dinamico donde JS pondra la imagen actual -->
+                <div id="modal-slide-container"></div>
+
+                <!-- Botones de navegación -->
+                <button class="modal-prev" onclick="cambiarSlideModal(-1)">&#10094;</button>
+                <button class="modal-next" onclick="cambiarSlideModal(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Seccion de diferenciales -->
+        <section class="diferenciales-contenedor">
+            <H2>Diferenciales</H2>
+
+            <div class="dif-grid">
+
+                <!-- Confort y tecnologia -->
+                <div class="dif-card">
+                    <img src="../imageneshibrida/diseño.jpeg" alt="exterior">
+                    <div class="dif-texto">
+                        <h3>Diseño</h3>
+                        <p>Diseño frontal completamente renovado, con una parrilla en forma de panal que transmite mayor
+                            modernidad y sofisticación. Faros delanteros bi-LED con regulación en altura y luces de
+                            giros secuenciales (Disponible en versión SEG HEV). Nuevo diseño de llantas de 18”, con
+                            diseño tridimensional que le otorgan más elegancia (Disponible en versión SEG HEV).</p>
+                    </div>
+                </div>
+
+                <!-- Diseño -->
+                <div class="dif-card">
+                    <img src="../imageneshibrida/mayorconfort.jpeg" alt="interior">
+                    <div class="dif-texto">
+                        <h3>Mayor confort para todos</h3>
+                        <p>Para asegurar una experiencia aún más sofisticada para los ocupantes, el Corolla Cross
+                            combina en su interior iluminación LED con diferentes texturas y colores en los tapizados de
+                            los asientos. Además, la versión SEG cuenta con un display de información múltiple Full
+                            Digital de 12,3”.</p>
+                    </div>
+                </div>
+
+                <!-- Tecnologia -->
+                <div class="dif-card">
+                    <img src="../imageneshibrida/tecnologia.jpeg" alt="tecnologia">
+                    <div class="dif-texto">
+                        <h3>Tecnología</h3>
+                        <p>Ahora todas las versiones disponen de freno de estacionamiento electrónico. Además, el nuevo
+                            Corolla Cross incorpora encendido por botón y Sistema de Ingreso Inteligente (Disponible en
+                            versiones XEI y SEG).
+                            A partir de la versión XEI, Corolla Cross incluye cargador inalámbrico** y en las versiones
+                            SEG, además, está equipada con sistema eléctrico de apertura y cierre del baúl, cámara de
+                            estacionamiento 360° y Servicios Conectados.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Trabajo Final Integrador.</p>
+    </footer>
+
+    <script src="../js/carruselhibrida.js"></script>
+    <script src="../js/versiones.js"></script>
+</body>
+
+</html>

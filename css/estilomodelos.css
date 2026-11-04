@@ -67,6 +67,60 @@
     display: block;
 }
 
+.banner-hiace {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.banner-hiace img {
+    width: 100%;
+    height: 70vh;
+    min-height: 320px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.banner-hibrida {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.banner-hibrida img {
+    width: 100%;
+    height: 70vh;
+    min-height: 320px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.banner-hino {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.banner-hino img {
+    width: 100%;
+    height: 70vh;
+    min-height: 320px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
 
 
 
@@ -190,6 +244,7 @@
     max-width: 800px;
     margin: 0 auto; 
 }
+
 
 .raz-card {
     display: flex;
@@ -320,6 +375,7 @@
     gap: 30px;
 }
 
+
 .dif-card {
     display: flex;
     flex-direction: column;
@@ -367,6 +423,88 @@
 
     .dif-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.diferenciales-contenedor-camion {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.dif-grid-camion {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dif-card-camion {
+    display: flex !important;
+    flex-direction: row !important; 
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+}
+
+.dif-card-camion:hover {
+    transform: translateY(-5px);
+}
+
+/* La imagen ocupa la mitad izquierda */
+.dif-card-camion img {
+    width: 50% !important;
+    height: 320px !important;
+    object-fit: cover !important;
+    display: block;
+}
+
+/* La caja de texto ocupa la mitad derecha */
+.dif-card-camion .dif-texto,
+.dif-card-camion div:not(img) {
+    width: 50% !important;
+    padding: 40px !important;
+    box-sizing: border-box;
+}
+
+.dif-card-camion h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #111;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.dif-card-camion p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Efecto espejo: invierte el orden en tarjetas alternas */
+.dif-card-camion:nth-child(even) {
+    flex-direction: row-reverse !important;
+}
+
+/* Responsivo para celulares: se apilan verticalmente */
+@media (max-width: 768px) {
+    .dif-card-camion,
+    .dif-card-camion:nth-child(even) {
+        flex-direction: column !important;
+    }
+    .dif-card-camion img,
+    .dif-card-camion .dif-texto,
+    .dif-card-camion div:not(img) {
+        width: 100% !important;
+    }
+    .dif-card-camion img {
+        height: 220px !important;
+    }
+    .dif-card-camion .dif-texto {
+        padding: 25px !important;
     }
 }
 

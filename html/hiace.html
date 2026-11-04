@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota | Hiace Furgón</title>
+    <link rel="stylesheet" href="../css/estiloprincipal.css">
+    <link rel="stylesheet" href="../css/estilomodelos.css">
+    <link rel="icon" href="../imagenes/logo-toyota.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logotoyota">
+            <h1>Toyota</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexprincipal.html">Inicio</a></li>
+                <li><a href="indexmodelos.html">Modelos</a></li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Banner principal del modelo -->
+        <div class="banner-hiace">
+            <img src="../imageneshiace/banner.jpeg" alt="Banner">
+        </div>
+
+        <!-- -->
+        <section class="info-general">
+            <h2>Si la L2H2 es tu Furgón, contáctanos.</h2>        
+
+            <!--  -->
+            <div class="categorias-grid">
+                <button class="cat-btn active" onclick="filtrarVersion('l2h2')">L2H2 4x2</button>
+            </div>
+
+            <!-- Caja contenedora  -->
+            <div class="modelos">
+                <!-- Version L2H2  -->
+                <div id="l2h2" class="categoria-contenido active-cat">
+                    <div class="contenido-card">
+                        <img src="../imageneshiace/l2h2.png" alt="Hiace Furgon" class="auto-img">
+                        <h3>L2H2</h3>
+                        <p class="precio">$72.798.000</p>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- Seccion de confort, diseño, seguridad, perfomance -->
+        <section class="razones-container">
+            <h2>Razones para tener una Hiace Furgón</h2>
+
+            <div class="razones-grid">
+                <div class="raz-card">
+                    <img src="../imageneshiace/comoda.webp" alt="comoda">
+                    <div class="raz-texto">
+                        <h3>CÓMODA</h3>
+                        <P>Redefinimos la forma de trabajar. Gracias a su caja automática de 6 marchas, completo pack
+                            eléctrico, sistema de manos libres y butacas ergonómicas, tu trabajo ya no es una carga más.
+                        </P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imageneshiace/practica.webp" alt="practica">
+                    <div class="raz-texto">
+                        <h3>PRÁCTICA</h3>
+                        <P>La L2H2, se adapta cómodamente al
+                            manipuleo de cargas paletizadas gracias a la doble puerta lateral.
+                        </P>
+                    </div>
+                </div>
+
+                <div class="raz-card">
+                    <img src="../imageneshiace/segura.webp" alt="segura">
+                    <div class="raz-texto">
+                        <h3>SEGURA</h3>
+                        <P>Con Toyota Hiace podés sentirte seguro, y enfocar tus preocupaciones en el trabajo. La nueva
+                            plataforma de alta resistencia a la torsión ofrece una posición de manejo cómoda, gran
+                            visibilidad, una excelente facilidad de manejo, y estabilidad superior, complementado con un
+                            completo pack de asistencias electrónicas, como el control de estabilidad (VSC), control de
+                            tracción (TRC) con AutoLSD y asistente de arranque en pendientes (HAC). Además cuenta con
+                            airbags frontales (x2) para los 3 ocupantes y de rodilla para el conductor (x1).
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerias de interior y exterior -->
+        <section class="galeria-interior">
+            <div class="galeria-grid">
+                <div class="galeria-card" onclick="abrirGaleria('interior')">
+                    <img src="../imageneshiace/intgal1.jpeg" alt="Interior">
+                    <div class="galeria-overlay">
+                        <h3>Interior</h3>
+                    </div>
+                </div>
+
+                <div class="galeria-card" onclick="abrirGaleria('exterior')">
+                    <img src="../imageneshiace/extgal1.jpeg" alt="exterior">
+                    <div class="galeria-overlay">
+                        <h3>Exterior</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ventana flotante de carrusel -->
+        <div id="modal-galeria" class="modal-carrusel">
+            <span class="cerrar-modal" onclick="cerrarGaleria()">&times;</span>
+
+            <div class="modal-contenido">
+                <!-- contenedor dinamico donde JS pondra la imagen actual -->
+                <div id="modal-slide-container"></div>
+
+                <!-- Botones de navegación -->
+                <button class="modal-prev" onclick="cambiarSlideModal(-1)">&#10094;</button>
+                <button class="modal-next" onclick="cambiarSlideModal(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Seccion de diferenciales -->
+        <section class="diferenciales-contenedor">
+            <H2>Diferenciales</H2>
+
+            <div class="dif-grid">
+
+                <!-- Confort  -->
+                <div class="dif-card">
+                    <img src="../imageneshiace/confortint.webp" alt="torpedo">
+                    <div class="dif-texto">
+                        <h3>CONFORT INTERIOR</h3>
+                        <p>Todas las versiones están equipadas con audio con CD, MP3, USB, Bluethooth y manos libres y
+                            volante multifunción con control de audio y teléfono. Además cuentan con una bandeja central
+                            con posavasos y levanta cristales eléctricos. La versión L2H2 incorpora una consola con
+                            bandeja superior.</p>
+                    </div>
+                </div>
+
+                <!-- Practica -->
+                <div class="dif-card">
+                    <img src="../imageneshiace/practicadiferenciales.webp" alt="practica">
+                    <div class="dif-texto">
+                        <h3>PRACTICA</h3>
+                        <p>La L2H2 además cuenta con doble puerta de acceso lateral y espejos
+                            exteriores de giro angular.</p>
+                    </div>
+                </div>
+
+                <!-- Seguridad -->
+                <div class="dif-card">
+                    <img src="../imageneshiace/seguradiferenciales.webp" alt="seguridad">
+                    <div class="dif-texto">
+                        <h3>SEGURA</h3>
+                        <p>Hiace ofrece en ambas versiones airbags frontales (x2) con protección para 3 ocupantes,
+                            Control de estabilidad (VSC), Control de tracción (TRC) y luz antiniebla trasera.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Trabajo Final Integrador.</p>
+    </footer>
+
+    <script src="../js/carruselhiace.js"></script>
+    <script src="../js/versiones.js"></script>
+</body>
+
+</html>
